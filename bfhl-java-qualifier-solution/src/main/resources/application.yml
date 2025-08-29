@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:bfhl;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+app:
+  candidate:
+    name: "Stuti Gupta"
+    regNo: "22BRS1274"
+    email: "stuti.gupta@vitstudent.ac.in"
+
+bfhl:
+  baseUrl: "https://bfhldevapigw.healthrx.co.in"
+  generateWebhookPath: "/hiring/generateWebhook/JAVA"
+  submitPath: "/hiring/testWebhook/JAVA"
+
+logging:
+  level:
+    root: INFO
+    com.example.bfhl: DEBUG
