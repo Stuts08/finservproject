@@ -8,7 +8,6 @@ This app automates the Bajaj Finserv Health qualifier flow:
 4. It **stores** the outcome in an **H2 DB** (`submission_result` table).
 5. It **submits** the SQL to the provided **webhook URL** (or the fallback submit path) with `Authorization: <accessToken>`.
 
-> **Note:** The PDF problem statements are not included here. Paste your final SQL into the appropriate file before running.
 
 ---
 
@@ -67,11 +66,3 @@ On startup you should see logs for:
 
 ---
 
-## Submission Checklist
-
-When you're ready:
-1. Push this repo to GitHub (public).
-2. Include **code**, **final JAR**, and **RAW downloadable** link to the JAR from GitHub releases or artifacts.
-3. Provide links in the form as requested.
-
-Good luck!
